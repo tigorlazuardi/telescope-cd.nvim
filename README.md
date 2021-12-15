@@ -1,9 +1,4 @@
-# Golang Repo Template
+# Telescope CD
 
-Repo template specialized for golang development, featuring Conventional-Commit, Golangci-lint integration, and Mockery for testing.
+Telescope plugin to cd to selected directory in telescope prompt.
 
-Execute `prepare.sh` to start installing requirements and initializing git hooks.
-
-```sh
-bash ./prepare.sh
-```
