@@ -1,0 +1,52 @@
+run:
+  skip-dirs:
+    - mocks
+
+  skip-files:
+    - ".*test\\.go$"
+
+linters:
+  disable-all: true
+  enable:
+    # unused
+    - deadcode
+    - varcheck
+
+    # bugs
+    - errcheck
+    - govet
+    - staticcheck
+    - typecheck
+    - bodyclose
+    - contextcheck
+    - errorlint
+    - exhaustive
+    - exportloopref
+    - forcetypeassert
+    - durationcheck
+    - gosec
+    - makezero
+    - noctx
+
+    # style
+    - gosimple
+    - unconvert
+    - wastedassign
+
+    # complexity
+    - cyclop
+
+    # format
+    - gci
+    - gofmt
+    - gofumpt
+    - godot
+    - whitespace
+
+linters-settings:
+  cyclop:
+    max-complexity: 10
+    skip-tests: true
+
+issues:
+  fix: true
